@@ -14,9 +14,9 @@ const config = {
  
 const Login = ({ isLoggedIn, login, logout }) => {
   if (isLoggedIn) {
-    return <button type='button' onClick={logout}>Logout</button>
+    return <button type='button' className="btn btn-primary" onClick={logout}>Logout</button>
   } else {
-    return <button type='button' onClick={login}>Login</button>
+    return <button type='button' className="btn btn-primary" onClick={login}>Login</button>
   }
 }
  
